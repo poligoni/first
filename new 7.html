@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0030)http://baki.spb.ru/index.shtml -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Баки | Емкости | Баки топливные | Баки для воды | Баки пластиковые | Баки для душа | Емкости пластиковые | СПб</title>
+</head><body>
+
+<h1>Цыклы</H1>
+<script LANGUAGE="JavaScript">
+names = new Array();
+var i = 0;
+var next = " ";
+do {
+next = prompt("Введите имена");
+if (next > " ") names[i] = next;
+i++;
+}
+while (next > " ");
+
+
+document.write("<h2>Список из "+ names.length + " имен </H1>");
+document.write("<OL>")
+for (i in names){
+
+document.write("<LI>" + names[i] + "</LI");
+document.write("</OL>")
+}
+document.write("<br>");
+
+with (names[1]){
+alert("Длина имнени" + names[1] + length);
+toUpperCase();
+document.write(names[1]);
+}
+
+
+</script>
+
+</body></html>

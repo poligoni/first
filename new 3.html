@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0030)http://baki.spb.ru/index.shtml -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Баки | Емкости | Баки топливные | Баки для воды | Баки пластиковые | Баки для душа | Емкости пластиковые | СПб</title>
+</head><body>
+<h1>Работа со строками</h1>
+
+<script LANGUAGE="JavaScript">
+var message = "Пример бегущей строки пожалуйста смотрите";
+var spaser = "...              ...";
+var pos = 0;
+function ScrollMessage(){document.write("Тестирование");
+pos++;
+if (pos > message.length){ pos = 0};
+window.setTimeout("ScrollMessage()", 10000);
+
+}
+
+Alpha = "ABCDEFGHIJKLMNOPQRSTPUVWXYZ"
+a = Alpha.substring(0,4);
+g = Alpha.charAt(6);
+dlina = Alpha.length;
+find = Alpha.indexOf("GH"); // Ищем первое вхождение
+findp = Alpha.indexOf("P", 10); // Ищем первое вхождения элемента начиная с 10 симвода
+findpl = Alpha.lastIndexOf("Pk"); // Ищем последнее вхождения элемента 
+document.write(a + "<br>");
+document.write(g + "<br>");
+document.write(dlina + " Длина альфы<br>");
+document.write(find + "<br>");
+document.write(findpl + "<br>");
+if (findpl > 0){ alert("p найдено в положении " + findpl)};
+
+massiv = new Array(27);
+len =  Alpha.length;
+document.write("Длина строки Альфа = "+ len + " символов <br>");
+//i = 1;
+//massiv[i] = Alpha.charAt(i);
+//document.write(massiv[1] + "<br>");
+
+for (i=0; i<27; i++ ){
+massiv[i] = Alpha.charAt(i)
+document.write(massiv[i] + "<br>");
+}
+
+
+</script>
+
+
+
+
+</body></html>

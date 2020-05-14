@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0030)http://baki.spb.ru/index.shtml -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Баки | Емкости | Баки топливные | Баки для воды | Баки пластиковые | Баки для душа | Емкости пластиковые | СПб</title>
+</head><body>
+
+<h1>Цыклы</H1>
+<script LANGUAGE="JavaScript">
+
+
+Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZsdsdsd"
+var i = 0;
+while (i<Alpha.length){
+//if (i == 7) break;
+document.write(Alpha.charAt(i) + "\t");
+i++;
+
+}
+document.write("<br>");
+var a = 0;
+do {
+
+document.write(Alpha.charAt(a) + "\t");
+a++;
+}
+while (a<Alpha.length);
+
+document.write("<br>");
+
+for (i=0; i<Alpha.length; i++){
+if (i == 5) continue;
+document.write(Alpha.charAt(i) + "\t");
+}
+
+
+
+
+document.write("<br>");
+
+massiv = new Array;
+for (i=0; i<Alpha.length; i++){
+massiv[i] = Alpha.charAt(i);
+}
+
+document.write("<br>");
+
+for (i in massiv){
+document.write("элемент" + i + " Значение " + massiv[i] + "<br>");
+
+}
+
+
+</script>
+
+</body></html>

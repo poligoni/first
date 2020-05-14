@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0030)http://baki.spb.ru/index.shtml -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Баки | Емкости | Баки топливные | Баки для воды | Баки пластиковые | Баки для душа | Емкости пластиковые | СПб</title>
+</head><body>
+<H1>Пример Swith</H1>
+
+<script LANGUAGE="JavaScript">
+document.write("<br>");
+var b = 0;
+a = (b==1)? 5: 10;
+document.write(a);
+
+where = prompt("куда перейти: Баки, сантех, насос");
+where = where.toLowerCase();
+document.write(where);
+switch (where) {
+ case "баки" :
+  window.location="http://baki.spb.ru";
+  break;
+ case "сантех" :
+  window.location="http://santexteplo.ru";
+  break;
+ case "насос" :
+  window.location="http://nacoc.ru";
+  break;
+ // default :
+ //  window.location="http://google.ru";
+
+}
+
+</script>
+
+
+
+
+</body></html>

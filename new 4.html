@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0030)http://baki.spb.ru/index.shtml -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Баки | Емкости | Баки топливные | Баки для воды | Баки пластиковые | Баки для душа | Емкости пластиковые | СПб</title>
+</head><body>
+<h1>Работа с массивами</h1>
+
+<script LANGUAGE="JavaScript">
+
+Alpha = "ABCDEFGHIJKLMNOPQRSTPUVWXYZ"
+a = Alpha.substring(0,4);
+g = Alpha.charAt(6);
+dlina = Alpha.length;
+find = Alpha.indexOf("GH"); // Ищем первое вхождение
+findp = Alpha.indexOf("P", 10); // Ищем первое вхождения элемента начиная с 10 симвода
+findpl = Alpha.lastIndexOf("Pk"); // Ищем последнее вхождения элемента 
+document.write(a + "<br>");
+document.write(g + "<br>");
+document.write(dlina + " Длина альфы<br>");
+document.write(find + "<br>");
+document.write(findpl + "<br>");
+if (findpl > 0){ alert("p найдено в положении " + findpl)};
+
+massiv = new Array(27);
+len =  Alpha.length;
+document.write("Длина строки Альфа = "+ len + " символов <br>");
+
+
+for (i=0; i<27; i++ ){
+massiv[i] = Alpha.charAt(i)
+document.write(massiv[i] + "\t");
+}
+ document.write("<br>");
+ 
+massiv2 = new Array();
+for (i=25; i>0; i-- ){
+massiv2[i] = parseInt(i);
+document.write(massiv2[i] + "\t");
+}
+document.write("<br>");
+Stroka = "Элементы: 1 = "+ massiv[1] + ", 2 = " + massiv[2] + ", 3 = " + massiv[3] + "<br>";
+document.write(Stroka);
+razbil = Alpha.split("P"); //Разделение строки по P
+document.write(razbil[0] +"<br>");
+document.write(razbil[1] +"<br>");
+document.write(razbil[2] +"<br>");
+document.write(razbil.join(","));
+document.write("<br>");
+massiv3 = new Array;
+massiv3 = massiv2.sort(function(a,b){return a-b;});
+document.write(massiv3);
+document.write("<br>");
+document.write(massiv3.reverse());
+
+
+</script>
+</body></html>
