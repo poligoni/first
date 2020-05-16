@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lesson 1 | Урок 1</title>
+</head><body>
+<h1>Время - деньги.</h1>
+<script LANGUAGE="JavaScript">
+  var money,
+      time;
+ 
+    money = +prompt('Введите бюджет на месяц');
+    console.log(money);
+    time = prompt('Введите дату в формате YYYY-MM-DD');    
+    console.log(time);
+
+    let appData = {
+        Money: money,
+        Time: time,
+        expenses: {
+
+        },
+        optionalExpenses: {
+
+        },
+        income: [],
+        savings: false
+
+    }
+    console.log(appData.Money);
+    console.log(appData.savings);
+    let v1 = prompt("Введите обязательную статью расходов");
+    appData.expenses[v1] = prompt("Во сколько обойдется?");
+    console.log(appData.expenses);
+
+    alert("Ваш бюджет на 1 день равен " + appData.Money/30);
+
+</script>
+
+
+
+
+
+
+</body></html>
